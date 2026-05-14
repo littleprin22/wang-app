@@ -147,7 +147,6 @@ const App = () => {
       }
     };
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
-    console.log("접속 주소:", apiUrl);
     const response = await fetchWithRetry(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
