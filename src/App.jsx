@@ -68,7 +68,7 @@ const App = () => {
 
   // Vite 환경변수 사용
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY || ""; 
-  const modelName = 'gemini-1.5-flash';
+  const modelName = 'gemini-2.5-flash';
 
   const [subjectData, setSubjectData] = useState({
     counts: { '매우잘함': 1, '잘함': 1, '보통': 1, '노력요함': 0 },
