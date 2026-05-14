@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { BookOpen, Smile, Sparkles, Download, Copy, RefreshCw, CheckCircle, Edit3, FileText, UserCheck, Award, ChevronRight, Zap, Loader, Trash2 } from 'lucide-react';
-
+import './index.css';
 const CORRECT_PASSWORD = '0402';
 
 // 행동발달 특성 태그 목록
@@ -68,7 +68,7 @@ const App = () => {
 
   // Vite 환경변수 사용
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY || ""; 
-  const modelName = 'gemini-2.5-flash-preview-09-2025';
+  const modelName = 'gemini-1.5-flash';
 
   const [subjectData, setSubjectData] = useState({
     counts: { '매우잘함': 1, '잘함': 1, '보통': 1, '노력요함': 0 },
